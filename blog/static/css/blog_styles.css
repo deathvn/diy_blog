@@ -1,0 +1,18 @@
+p img {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+
+p img + em {
+    display: block;
+    text-align: center;
+    color: #757575;
+}
+
+pre {
+    background: #f5f5f5;
+    border-left: 4px solid #287bce;
+    padding: 6px;
+    margin-bottom: 32px;
+}

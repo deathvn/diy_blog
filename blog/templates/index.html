@@ -1,0 +1,16 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+  <h1>Mini Blog homepage</h1>
+  <p>Welcome to my Mini Blog, a website developed by <em><a href="https://deathvn.github.io/blog/">Maple & Wind Blog</a></em></p>
+  
+  <h2>The blog has the following record counts:</h2>
+  <ul>
+    <li>Blogs: {{ num_blogs }}</li>
+    <li>Authors: {{ num_blog_authors }}</li>
+  </ul>
+  <p>You view this Page 
+    {{ num_visits }}
+    time{% if num_visits > 1 %}s{% endif %}
+  </p>
+{% endblock %}

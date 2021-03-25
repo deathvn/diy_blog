@@ -1,0 +1,14 @@
+{% extends "base_generic.html" %}
+
+{% block content %}
+
+<h1>Are you Sure</h1>
+<p>Blog: {{ blogcomment.blog }}</p>
+<p>Delete the comment: {{ blogcomment }}</p>
+
+<form method="post" action="">
+  {% csrf_token %}
+  <input class="btn btn-danger" type="submit" value="Yes, Delete!" />
+</form>
+
+{% endblock %}
